@@ -1,0 +1,18 @@
+// font-face fonts
+// see http://compass-style.org/docs/reference/compass/css3/font_face/
+
+//@import "compass/css3/font-face";
+
+//Social button fontface, more info at http://grawl.github.io/Grands/ 
+
+
+@each $font-face in Grands {
+    @font-face {
+          font-family: $font-face; font-style: normal; font-weight: normal;
+          src: url('fonts/#{$font-face}.eot');
+          src: url('fonts/#{$font-face}.eot?#iefix') format('eot'),
+               url('fonts/#{$font-face}.woff') format('woff'),
+               url('fonts/#{$font-face}.ttf')  format('truetype');
+    }
+}
+

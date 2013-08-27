@@ -1,0 +1,12 @@
+// Mixins
+
+
+// @include display:inline-block
+@mixin inlineblock() {
+    display: inline-block;
+    vertical-align: top;
+    .ie7 &{
+    	display: inline;
+    	zoom:1;
+    }
+}

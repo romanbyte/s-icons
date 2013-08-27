@@ -1,0 +1,186 @@
+// Social buttons class name and ico
+
+$youtube: ('YouTube', '000');
+$yandex: ('Yandex', '001');
+$vkontakte: ('Vkontakte', '002');
+$vk: ('VK', '003');
+$vimeo: ('vimeo', '004');
+$twitter: ('twitter', '005');
+$tumblr: ('tumblr', '006');
+$steam: ('Steam', '007');
+$stackoverflow: ('StackOverflow', '008');
+$soundcloud: ('SoundCloud', '009');
+$skype: ('Skype', '00a');
+$share: ('Share', '00b');
+$rss: ('RSS', '00c');
+$readability: ('Readability', '00d');
+$readitlater: ('Read-it-Later', '00e');
+$pocket: ('Pocket', '00f');
+$pinterest: ('Pinterest', '010');
+$picasa: ('Picasa', '011');
+$openid: ('OpenID', '012');
+$myspace: ('MySpace', '013');
+$moikrug: ('MoiKrug', '014');
+$linkedin: ('Linked-in', '015');
+$lj: ('LifeJournal', '016');
+$lastfm: ('lastfm', '017');
+$jabber: ('Jabber', '018');
+$instapaper: ('Instapaper', '019');
+$habrahabr: ('HabraHabr', '01a');
+$google: ('google', '01b');
+$githuboctoface: ('GitHub-octoface', '01c');
+$githubcircle: ('GitHub-circle', '01d');
+$foursquare: ('FourSquare', '01e');
+$flickr: ('flickr', '01f');
+$flattr: ('Flattr', '020');
+$facebook: ('facebook', '021');
+$evernote: ('Evernote', '022');
+$email: ('Email', '023');
+$dropbox: ('DropBox', '024');
+$blogspot: ('Blogspot', '025');
+$bitbucket: ('BitBucket', '026');
+$youtubeplay: ('YouTube-play', '027');
+
+
+// icon size
+
+// sizes
+$sicon-base-width:20px;
+$sicon-base-height:20px;
+$sicon-border-width:1px !default;
+$sicon-width: $sicon-base-width - $sicon-border-width !default;
+$sicon-height: $sicon-base-height - $sicon-border-width !default;
+$sicon-link-width: $sicon-base-width + $sicon-border-width !default;
+$sicon-link-height: $sicon-base-height + $sicon-border-width !default;
+$sicon-line-height:$sicon-base-height + $sicon-border-width !default;
+$sicon-font-size:25px !default;
+$sicon-bradius:2px !default;
+$sicon-outline-width:1px !default;
+// colors
+$sicon-color:#FFF !default;
+$sicon-border-color:rgba(#fff, 0.4) !default;
+$sicon-outline-color:#28518e !default;
+
+
+
+
+[data-icon]:before {
+    font-family: 'Grands';
+    content: attr(data-icon);
+    speak: none;
+    @extend [class^="icon-"]:before;
+}
+
+[class^="icon-"]:before {
+    font-family: 'Grands';
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    font-size: $sicon-font-size;
+    color: $sicon-color;
+    z-index: 5;
+    display: block;
+    width: $sicon-base-width;
+	height: $sicon-base-height;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: $sicon-line-height;
+	
+
+}
+
+[class*=" icon-"]:before {
+	@extend [class^="icon-"]:before;
+}
+
+[class^="icon-"]:after {
+	content:"";
+	position: absolute;
+    width: $sicon-width;
+	height: $sicon-height;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	border: $sicon-border-width solid $sicon-border-color;
+	$experimental-support-for-svg: true;
+	@include border-radius($sicon-bradius);
+	@include box-shadow($sicon-outline-color 0px 0px 0px $sicon-outline-width); 
+}
+
+[class*=" icon-"]:after {
+	@extend [class^="icon-"]:after;
+}
+
+
+@each $sbtn in $youtube, $yandex, $vkontakte, $vk, $vimeo, $twitter, $tumblr, $steam, $stackoverflow, $soundcloud, $skype, $share, $rss, $readability, $readitlater, $pocket, $pinterest, $picasa, $openid, $myspace, $moikrug, $linkedin, $lj, $lastfm, $jabber, $instapaper, $habrahabr, $google, $githuboctoface, $githubcircle, $foursquare, $flickr, $flattr, $facebook, $evernote, $email, $dropbox, $blogspot, $bitbucket, $youtubeplay {
+    $name: nth($sbtn, 1);
+    $value: nth($sbtn, 2);
+    .icon-#{$name}:before { 
+    	content:"\e#{$value}"; 
+    	
+    }
+
+}
+
+
+.icon-#{nth($facebook, 1)} {
+    position: relative;
+    	
+    	&:before { 
+    		text-indent: 2px;    
+    	}
+
+    	&:after {
+    		// needs latest Compass, add '@import "compass"' to your scss
+			background-color: #28518e; // Old browsers
+			@include filter-gradient(#28518e, #4268af, vertical); // IE6-9
+			@include background-image(linear-gradient(top,  #28518e 0%,#4268af 81%,#6a7ba8 86%,#827caa 90%,#4268af 93%));	        
+
+    	}
+}
+
+
+.icon-#{nth($vkontakte, 1)} {
+    position: relative;
+    	
+    	&:before {  
+    	text-indent: -2px;        
+    	}
+    	&:after {
+  			background-color: #5c86ac;
+  			.oldie &{
+    				@include filter-gradient(#5c86ac, #3f648e, vertical);
+    			}
+			@include background-image(linear-gradient(top,  #5c86ac 0%,#3f648e 100%));
+	        @include box-shadow(#5c86ac 0px 0px 0px $sicon-outline-width); 
+
+    	}
+}
+
+
+
+.social-external-links {}
+
+	.social-external-links li {
+		padding: 0;
+		margin: 0 0 0 10px;
+		@include inlineblock();
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+		.social-external-links li a {
+			@include squish-text;
+			display: block;
+			width: $sicon-link-width;
+			height: $sicon-link-height;
+			position: relative;
+			z-index: 105;
+		}
+
+
+    
