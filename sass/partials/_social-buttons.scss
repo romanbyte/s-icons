@@ -161,6 +161,26 @@ $sicon-outline-color:#28518e !default;
 }
 
 
+.icon-#{nth($twitter, 1)} {
+    position: relative;
+        
+    	&:before {  
+    	text-indent: 1px;
+        font-size:19px;
+    	}
+    	&:after {
+  			background-color: #5c86ac;
+  			.oldie &{
+    				@include filter-gradient(#5c86ac, #3f648e, vertical);
+    			}
+			@include background-image(linear-gradient(top,  #5c86ac 0%,#3f648e 100%));
+	        @include box-shadow(#5c86ac 0px 0px 0px $sicon-outline-width); 
+
+    	}
+}
+
+
+
 
 .social-external-links {}
 
