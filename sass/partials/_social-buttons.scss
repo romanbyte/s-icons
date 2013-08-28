@@ -83,11 +83,11 @@ $sicon-outline-color:#28518e !default;
     z-index: 5;
     display: block;
     width: $sicon-base-width;
-    height: $sicon-base-height;
-    position: absolute;
-    left: 0;
-    top: 0;
-    line-height: $sicon-line-height;
+	height: $sicon-base-height;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: $sicon-line-height;
 	
 
 }
@@ -120,38 +120,67 @@ $sicon-outline-color:#28518e !default;
     $value: nth($sbtn, 2);
     .icon-#{$name}:before { 
     	content:"\e#{$value}"; 
+    	
     }
+
 }
 
 
 .icon-#{nth($facebook, 1)} {
     position: relative;
+    	
     	&:before { 
     		text-indent: 2px;    
     	}
+
     	&:after {
     		// needs latest Compass, add '@import "compass"' to your scss
 			background-color: #28518e; // Old browsers
 			@include filter-gradient(#28518e, #4268af, vertical); // IE6-9
 			@include background-image(linear-gradient(top,  #28518e 0%,#4268af 81%,#6a7ba8 86%,#827caa 90%,#4268af 93%));	        
+
     	}
 }
 
 
 .icon-#{nth($vkontakte, 1)} {
     position: relative;
-        &:before {  
-    	   text-indent: -2px;        
+    	
+    	&:before {  
+    	text-indent: -2px;        
     	}
     	&:after {
   			background-color: #5c86ac;
-  			.oldie & {
-    			@include filter-gradient(#5c86ac, #3f648e, vertical);
-    		}
+  			.oldie &{
+    				@include filter-gradient(#5c86ac, #3f648e, vertical);
+    			}
 			@include background-image(linear-gradient(top,  #5c86ac 0%,#3f648e 100%));
 	        @include box-shadow(#5c86ac 0px 0px 0px $sicon-outline-width); 
+
     	}
 }
+
+
+.icon-#{nth($twitter, 1)} {
+    position: relative;
+        
+    	&:before {  
+    	text-indent: 1px;
+        font-size:19px;
+    	}
+    	&:after {
+  			background-color: #5c86ac;
+  			.oldie &{
+    				@include filter-gradient(#5c86ac, #3f648e, vertical);
+    			}
+			@include background-image(linear-gradient(top,  #5c86ac 0%,#3f648e 100%));
+	        @include box-shadow(#5c86ac 0px 0px 0px $sicon-outline-width); 
+
+    	}
+}
+
+
+
 
 .social-external-links {}
 
