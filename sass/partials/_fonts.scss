@@ -5,8 +5,10 @@
 
 //Social button fontface, more info at http://grawl.github.io/Grands/ 
 
+$socialFont:"GrandsExtended";
 
-@each $font-face in Grands {
+
+@each $font-face in $socialFont {
     @font-face {
           font-family: $font-face; font-style: normal; font-weight: normal;
           src: url('fonts/#{$font-face}.eot');

@@ -40,6 +40,7 @@ $dropbox: ('DropBox', '024');
 $blogspot: ('Blogspot', '025');
 $bitbucket: ('BitBucket', '026');
 $youtubeplay: ('YouTube-play', '027');
+$odnkl: ('Odnoklassniki', '028');
 
 
 // icon size
@@ -65,14 +66,14 @@ $sicon-outline-color:#28518e !default;
 
 
 [data-icon]:before {
-    font-family: 'Grands';
+    font-family: $socialFont;
     content: attr(data-icon);
     speak: none;
     @extend [class^="icon-"]:before;
 }
 
 [class^="icon-"]:before {
-    font-family: 'Grands';
+    font-family: $socialFont;
     font-style: normal;
     speak: none;
     font-weight: normal;
@@ -115,7 +116,7 @@ $sicon-outline-color:#28518e !default;
 }
 
 
-@each $sbtn in $youtube, $yandex, $vkontakte, $vk, $vimeo, $twitter, $tumblr, $steam, $stackoverflow, $soundcloud, $skype, $share, $rss, $readability, $readitlater, $pocket, $pinterest, $picasa, $openid, $myspace, $moikrug, $linkedin, $lj, $lastfm, $jabber, $instapaper, $habrahabr, $google, $githuboctoface, $githubcircle, $foursquare, $flickr, $flattr, $facebook, $evernote, $email, $dropbox, $blogspot, $bitbucket, $youtubeplay {
+@each $sbtn in $youtube, $yandex, $vkontakte, $vk, $vimeo, $twitter, $tumblr, $steam, $stackoverflow, $soundcloud, $skype, $share, $rss, $readability, $readitlater, $pocket, $pinterest, $picasa, $openid, $myspace, $moikrug, $linkedin, $lj, $lastfm, $jabber, $instapaper, $habrahabr, $google, $githuboctoface, $githubcircle, $foursquare, $flickr, $flattr, $facebook, $evernote, $email, $dropbox, $blogspot, $bitbucket, $youtubeplay, $odnkl {
     $name: nth($sbtn, 1);
     $value: nth($sbtn, 2);
     .icon-#{$name}:before { 
@@ -174,6 +175,20 @@ $sicon-outline-color:#28518e !default;
 	        @include box-shadow(#49B8DC 0px 0px 0px $sicon-outline-width); 
 
     	}
+}
+
+.icon-#{nth($odnkl, 1)} {
+    position: relative;
+        
+        &:before {  
+        text-indent: 0px;
+        font-size:19px;
+        }
+        &:after {
+            background-color: #F68735;
+            @include box-shadow(#F06C0B 0px 0px 0px $sicon-outline-width); 
+
+        }
 }
 
 

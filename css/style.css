@@ -340,11 +340,11 @@ table {
 }
 
 @font-face {
-  font-family: Grands;
+  font-family: "GrandsExtended";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/Grands.eot");
-  src: url("fonts/Grands.eot?#iefix") format("eot"), url("fonts/Grands.woff") format("woff"), url("fonts/Grands.ttf") format("truetype");
+  src: url("fonts/GrandsExtended.eot");
+  src: url("fonts/GrandsExtended.eot?#iefix") format("eot"), url("fonts/GrandsExtended.woff") format("woff"), url("fonts/GrandsExtended.ttf") format("truetype");
 }
 
 /* line 7, ../sass/partials/_page.scss */
@@ -352,16 +352,16 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 67, ../sass/partials/_social-buttons.scss */
+/* line 68, ../sass/partials/_social-buttons.scss */
 [data-icon]:before {
-  font-family: 'Grands';
+  font-family: "GrandsExtended";
   content: attr(data-icon);
   speak: none;
 }
 
-/* line 74, ../sass/partials/_social-buttons.scss */
+/* line 75, ../sass/partials/_social-buttons.scss */
 [class^="icon-"]:before, [data-icon]:before, [class*=" icon-"]:before {
-  font-family: 'Grands';
+  font-family: "GrandsExtended";
   font-style: normal;
   speak: none;
   font-weight: normal;
@@ -379,7 +379,7 @@ body, select, input, textarea {
   line-height: 21px;
 }
 
-/* line 99, ../sass/partials/_social-buttons.scss */
+/* line 100, ../sass/partials/_social-buttons.scss */
 [class^="icon-"]:after, [class*=" icon-"]:after {
   content: "";
   position: absolute;
@@ -399,215 +399,220 @@ body, select, input, textarea {
   box-shadow: #28518e 0px 0px 0px 1px;
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-YouTube:before {
   content: "\e000";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Yandex:before {
   content: "\e001";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Vkontakte:before {
   content: "\e002";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-VK:before {
   content: "\e003";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-vimeo:before {
   content: "\e004";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-twitter:before {
   content: "\e005";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-tumblr:before {
   content: "\e006";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Steam:before {
   content: "\e007";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-StackOverflow:before {
   content: "\e008";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-SoundCloud:before {
   content: "\e009";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Skype:before {
   content: "\e00a";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Share:before {
   content: "\e00b";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-RSS:before {
   content: "\e00c";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Readability:before {
   content: "\e00d";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Read-it-Later:before {
   content: "\e00e";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Pocket:before {
   content: "\e00f";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Pinterest:before {
   content: "\e010";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Picasa:before {
   content: "\e011";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-OpenID:before {
   content: "\e012";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-MySpace:before {
   content: "\e013";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-MoiKrug:before {
   content: "\e014";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Linked-in:before {
   content: "\e015";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-LifeJournal:before {
   content: "\e016";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-lastfm:before {
   content: "\e017";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Jabber:before {
   content: "\e018";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Instapaper:before {
   content: "\e019";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-HabraHabr:before {
   content: "\e01a";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-google:before {
   content: "\e01b";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-GitHub-octoface:before {
   content: "\e01c";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-GitHub-circle:before {
   content: "\e01d";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-FourSquare:before {
   content: "\e01e";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-flickr:before {
   content: "\e01f";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Flattr:before {
   content: "\e020";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-facebook:before {
   content: "\e021";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Evernote:before {
   content: "\e022";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Email:before {
   content: "\e023";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-DropBox:before {
   content: "\e024";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-Blogspot:before {
   content: "\e025";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-BitBucket:before {
   content: "\e026";
 }
 
-/* line 121, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
 .icon-YouTube-play:before {
   content: "\e027";
 }
 
-/* line 129, ../sass/partials/_social-buttons.scss */
+/* line 122, ../sass/partials/_social-buttons.scss */
+.icon-Odnoklassniki:before {
+  content: "\e028";
+}
+
+/* line 130, ../sass/partials/_social-buttons.scss */
 .icon-facebook {
   position: relative;
 }
-/* line 132, ../sass/partials/_social-buttons.scss */
+/* line 133, ../sass/partials/_social-buttons.scss */
 .icon-facebook:before {
   text-indent: 2px;
 }
-/* line 136, ../sass/partials/_social-buttons.scss */
+/* line 137, ../sass/partials/_social-buttons.scss */
 .icon-facebook:after {
   background-color: #28518e;
   *zoom: 1;
@@ -621,15 +626,15 @@ body, select, input, textarea {
   background-image: linear-gradient(top, #28518e 0%, #4268af 81%, #6a7ba8 86%, #827caa 90%, #4268af 93%);
 }
 
-/* line 145, ../sass/partials/_social-buttons.scss */
+/* line 146, ../sass/partials/_social-buttons.scss */
 .icon-Vkontakte {
   position: relative;
 }
-/* line 147, ../sass/partials/_social-buttons.scss */
+/* line 148, ../sass/partials/_social-buttons.scss */
 .icon-Vkontakte:before {
   text-indent: -2px;
 }
-/* line 150, ../sass/partials/_social-buttons.scss */
+/* line 151, ../sass/partials/_social-buttons.scss */
 .icon-Vkontakte:after {
   background-color: #5c86ac;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjODZhYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNmNjQ4ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -643,22 +648,22 @@ body, select, input, textarea {
   -moz-box-shadow: #5c86ac 0px 0px 0px 1px;
   box-shadow: #5c86ac 0px 0px 0px 1px;
 }
-/* line 152, ../sass/partials/_social-buttons.scss */
+/* line 153, ../sass/partials/_social-buttons.scss */
 .oldie .icon-Vkontakte:after {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5C86AC', endColorstr='#FF3F648E');
 }
 
-/* line 161, ../sass/partials/_social-buttons.scss */
+/* line 162, ../sass/partials/_social-buttons.scss */
 .icon-twitter {
   position: relative;
 }
-/* line 164, ../sass/partials/_social-buttons.scss */
+/* line 165, ../sass/partials/_social-buttons.scss */
 .icon-twitter:before {
   text-indent: 1px;
   font-size: 19px;
 }
-/* line 168, ../sass/partials/_social-buttons.scss */
+/* line 169, ../sass/partials/_social-buttons.scss */
 .icon-twitter:after {
   background-color: #B3ECFC;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IzZWNmYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ5YjhkYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -672,13 +677,30 @@ body, select, input, textarea {
   -moz-box-shadow: #49b8dc 0px 0px 0px 1px;
   box-shadow: #49b8dc 0px 0px 0px 1px;
 }
-/* line 170, ../sass/partials/_social-buttons.scss */
+/* line 171, ../sass/partials/_social-buttons.scss */
 .oldie .icon-twitter:after {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFB3ECFC', endColorstr='#FF49B8DC');
 }
 
-/* line 184, ../sass/partials/_social-buttons.scss */
+/* line 180, ../sass/partials/_social-buttons.scss */
+.icon-Odnoklassniki {
+  position: relative;
+}
+/* line 183, ../sass/partials/_social-buttons.scss */
+.icon-Odnoklassniki:before {
+  text-indent: 0px;
+  font-size: 19px;
+}
+/* line 187, ../sass/partials/_social-buttons.scss */
+.icon-Odnoklassniki:after {
+  background-color: #F68735;
+  -webkit-box-shadow: #f06c0b 0px 0px 0px 1px;
+  -moz-box-shadow: #f06c0b 0px 0px 0px 1px;
+  box-shadow: #f06c0b 0px 0px 0px 1px;
+}
+
+/* line 199, ../sass/partials/_social-buttons.scss */
 .social-external-links li {
   padding: 0;
   margin: 0 0 0 10px;
@@ -690,12 +712,12 @@ body, select, input, textarea {
   display: inline;
   zoom: 1;
 }
-/* line 188, ../sass/partials/_social-buttons.scss */
+/* line 203, ../sass/partials/_social-buttons.scss */
 .social-external-links li:first-child {
   margin-left: 0;
 }
 
-/* line 193, ../sass/partials/_social-buttons.scss */
+/* line 208, ../sass/partials/_social-buttons.scss */
 .social-external-links li a {
   font: 0/0 serif;
   text-shadow: none;
