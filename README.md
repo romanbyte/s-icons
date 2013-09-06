@@ -1,4 +1,5 @@
-s-icons
-=======
+# s-icons
+## SASS Social icon font
+### Sass версия https://github.com/Grawl/Grands
 
-На основе https://github.com/Grawl/Grands но с прикрученным sass
+Лицензия — [WTFPL](http://ru.wikipedia.org/wiki/WTFPL)
