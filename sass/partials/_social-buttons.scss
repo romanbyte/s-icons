@@ -134,7 +134,6 @@ $sicon-outline-color:#28518e !default;
     	}
 
     	&:after {
-    		// needs latest Compass, add '@import "compass"' to your scss
 			background-color: #28518e; // Old browsers
 			@include filter-gradient(#28518e, #4268af, vertical); // IE6-9
 			@include background-image(linear-gradient(top,  #28518e 0%,#4268af 81%,#6a7ba8 86%,#827caa 90%,#4268af 93%));	        
@@ -145,7 +144,6 @@ $sicon-outline-color:#28518e !default;
 
 .icon-#{nth($vkontakte, 1)} {
     position: relative;
-    	
     	&:before {  
     	text-indent: -2px;        
     	}
@@ -156,7 +154,6 @@ $sicon-outline-color:#28518e !default;
     			}
 			@include background-image(linear-gradient(top,  #5c86ac 0%,#3f648e 100%));
 	        @include box-shadow(#5c86ac 0px 0px 0px $sicon-outline-width); 
-
     	}
 }
 
@@ -169,12 +166,12 @@ $sicon-outline-color:#28518e !default;
         font-size:19px;
     	}
     	&:after {
-  			background-color: #5c86ac;
+  			background-color: #B3ECFC;
   			.oldie &{
-    				@include filter-gradient(#5c86ac, #3f648e, vertical);
+    				@include filter-gradient(#B3ECFC, #49B8DC, vertical);
     			}
-			@include background-image(linear-gradient(top,  #5c86ac 0%,#3f648e 100%));
-	        @include box-shadow(#5c86ac 0px 0px 0px $sicon-outline-width); 
+			@include background-image(linear-gradient(top,  #B3ECFC 0%,#49B8DC 100%));
+	        @include box-shadow(#49B8DC 0px 0px 0px $sicon-outline-width); 
 
     	}
 }
